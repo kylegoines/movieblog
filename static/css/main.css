@@ -1,0 +1,223 @@
+@charset "IBM437";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url("../fonts/Helvetica-Bold_gdi.eot");
+  src: url("../fonts/Helvetica-Bold_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Bold_gdi.woff") format("woff"), url("../fonts/Helvetica-Bold_gdi.ttf") format("truetype"), url("../fonts/Helvetica-Bold_gdi.svg#Helvetica-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0008-25CA; }
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?46595852");
+  src: url("../fonts/fontello.eot?46595852#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?46595852") format("woff"), url("../fonts/fontello.ttf?46595852") format("truetype"), url("../fonts/fontello.svg?46595852#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-circle-empty:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-circle:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-right-open:before {
+  content: '\e802'; }
+
+/* '' */
+h1, h2, h3, h4, h5, p, a, li {
+  color: #282626; }
+
+figcaption {
+  font-style: oblique;
+  text-align: right;
+  padding-top: 2px;
+  font-size: 16px;
+  padding: 10px 0 0 0; }
+
+h1, h2, h3 {
+  font-family: "Helvetica-Bold", arial, sans-serif;
+  font-size: 32px; }
+
+h2 {
+  transition: all .4s;
+  font-size: 48px;
+  background: #66cfe5;
+  display: inline;
+  line-height: 0px;
+  color: #f1f1f1;
+  font-family: "Myriad Pro", arial, sans-serif;
+  padding: 12px 10px 7px 10px;
+  margin-bottom: 10px; }
+
+h3 {
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 18px; }
+  h3 i {
+    transition: all .4s;
+    color: #66cfe5; }
+  h3 i.active {
+    transform: rotate(90deg);
+    display: inline-block; }
+
+a {
+  font-size: 18px; }
+
+p {
+  font-size: 20px;
+  line-height: 26px; }
+
+p, a, figcaption {
+  font-family: "Myriad Pro", arial, sans-serif;
+  font-weight: normal; }
+
+.sidebar li {
+  padding: 6px 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: red; }
+
+p {
+  margin: 35px 0;
+  line-height: 150%; }
+
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f1f1f1; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+header {
+  width: 100%; }
+  header .head-contain {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #282626; }
+
+.sidebar {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  clear: left;
+  margin-top: 50px; }
+  .sidebar h3 {
+    display: none; }
+  @media (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      margin: 0; }
+      .sidebar h3 {
+        display: block; }
+      .sidebar ul {
+        margin-left: 26px;
+        margin-bottom: 10px; } }
+
+.content {
+  width: 57.62712%;
+  float: right;
+  margin-right: 0;
+  margin-top: 96px; }
+  @media (max-width: 900px) {
+    .content {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 34px; } }
+
+.content img {
+  width: 100%; }
+.content figure {
+  position: relative;
+  top: 10px; }
+
+.title {
+  margin-bottom: 34px; }

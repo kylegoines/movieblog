@@ -1,0 +1,62 @@
+body{
+	@include container();
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background: $white;
+}
+
+header{
+	width: 100%;
+	.head-contain{
+		@include span(12 of 12);
+		padding-bottom: 20px;
+		border-bottom: 4px solid $black;
+	}
+}
+
+.sidebar{
+
+	@include span(5 of 12);
+	clear: left;
+	margin-top: 50px;
+	h3{
+		display: none;
+	}
+	
+	@include breakpoint(papa-bear){
+		@include span(12 of 12);
+		margin: 0;
+		h3{
+			display: block;
+		}
+		ul{
+			margin-left: 26px;
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+.content{
+	@include span(7 of 12 last);
+	margin-top: 96px;
+	@include breakpoint(papa-bear){
+		@include span(12 of 12);
+		margin-top: 34px;
+	}
+}
+
+.content{
+	img{
+		width: 100%;
+	}
+	figure{
+		position: relative;
+		top: 10px;
+	}
+}
+
+.title{
+	margin-bottom: 34px;
+}

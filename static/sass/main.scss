@@ -1,0 +1,17 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "vendor/susy";
+@import "partials/breakpoints";
+
+//variables
+
+$font1: 'Helvetica-Bold', arial, sans-serif;
+$font2: 'Myriad Pro', arial, sans-serif;
+
+$black: #282626;
+$white: #f1f1f1;
+$blue: #66cfe5;
+
+
+@import "partials/typography";
+@import "partials/content";
